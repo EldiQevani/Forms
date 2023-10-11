@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help yoo?</h2>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                placeholder="Enter your name please"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your E-Mail Address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                required
+                placeholder="Enter your email address please"
+              />
+            </li>
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input type="tel" name="phone" required id="phone" />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>
+              <label for="usermessage">Your message</label>
+              <textarea
+                name="user-message"
+                id="usermessage"
+                cols="40"
+                rows="6"
+                minlength=""
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>
+              <label for="find">How did you find us?</label>
+              <select name="find" id="find">
+                <option value="Web Search">Web Search</option>
+                <option value="University">University</option>
+                <option value="Other">Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="contact"
+                id="contact-phone"
+                value="phone"
+              />
+              <label for="contact-phone">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="contact"
+                id="contact-email"
+                value="email"
+              />
+              <label for="contant-email">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="noreply" id="no-reply" value="none" />
+              <label for="no-reply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" name="terms" id="agree-terms" />
+            <label for="agree-terms">Agree to terms?</label>
+          </div>
+        </section>
+
+        <section id="buttons">
+          <button type="reset" id="btn-empty">Clear</button>
+          <button type="submit" id="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

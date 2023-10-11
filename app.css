@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(208, 225, 233);
+  font-family: "Edu SA Beginner", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.7rem;
+  color: rgb(7, 7, 7);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+label {
+  color: rgb(35, 45, 60);
+  display: block;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+form {
+  width: 30rem;
+  margin: 1rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 8px rgb(170, 160, 160);
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid rgb(185, 185, 185);
+  padding: 0.3rem;
+  color: rgb(60, 60, 60);
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(220, 220, 220);
+  /* color: rgb(32, 15, 65);
+  border-color: rgb(32, 15, 65); */
+}
+.buttons {
+  display: flex;
+  justify-content: right;
+}
+
+button {
+  font: inherit;
+  background-color: rgb(32, 15, 65);
+  color: white;
+  border: 1px solid rgb(32, 15, 65);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#buttons {
+  text-align: right;
+}
+
+#btn-filled {
+  background-color: rgb(50, 70, 100);
+  color: white;
+}
+
+#btn-empty {
+  background-color: transparent;
+  color: rgb(50, 70, 100);
+}
+
+#btn-filled:hover {
+  border-color: rgb(60, 90, 130);
+  background-color: rgb(60, 90, 130);
+}
+
+#btn-empty:hover {
+  /* border-color: rgb(210, 215, 230); */
+  background-color: rgb(210, 215, 230);
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline label {
+  margin: 0;
+  margin-left: 0rem;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.5rem;
+}

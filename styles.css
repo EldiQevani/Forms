@@ -40,6 +40,10 @@ select {
   color: rgb(60, 60, 60);
 }
 
+textarea {
+  resize: none;
+}
+
 input:focus,
 textarea:focus {
   background-color: rgb(220, 190, 250);
